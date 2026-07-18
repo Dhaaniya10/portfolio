@@ -155,6 +155,12 @@ const awards = [
     desc: "Runner-up in the AI/ML domain for NeuroGuard, a wearable seizure detection system."
   },
 ];
+const languages = [
+  { flag: "🇬🇧", name: "English", level: "Professional Fluency (B2)" },
+   { flag: "🇮🇳", name: "Hindi", level: "Fluent" },
+  { flag: "🇮🇳", name: "Tamil", level: "Native" },
+  { flag: "🇮🇳", name: "Malayalam", level: "Native" }
+];
 
 // ---------- Render helpers ----------
 function renderProjectCards(list, mountId){
@@ -205,18 +211,28 @@ function renderAwards(){
     </div>
   `).join("");
 }
-
+function renderLanguages(){
+  const mount = document.getElementById("langGrid");
+  mount.innerHTML = languages.map(l => `
+    <div class="lang-card reveal">
+      <span class="lang-flag">${l.flag}</span>
+      <div class="lang-info">
+        <p class="lang-name">${l.name}</p>
+        <p class="lang-level">${l.level}</p>
+      </div>
+    </div>
+  `).join("");
+}
 renderProjectCards(dataEngProjects, "deGrid");
 renderProjectCards(aiProjects, "aiGrid");
 renderSkills();
 renderCerts();
 renderAwards();
-
+renderLanguages()
 // ---------- Typing role effect ----------
 const roles = [
-  "Data & AI Engineering Intern",
-  "Reverse Engineering Oracle Forms",
-  "Migrating SQL Server → Snowflake",
+  "Data & AI Engineering",
+  "Reverse Engineering",
   "Building LLM-Powered Automation",
 ];
 const typedEl = document.getElementById("typedRole");
