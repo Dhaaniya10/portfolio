@@ -67,49 +67,56 @@ const dataEngProjects = [
 
 const aiProjects = [
   {
-    tag: "AI · 01", icon: "📄",
+    tag: "AI · 01", icon: "🤖",
+    title: "Agentic AI Framework",
+    client: "Identifyou Technologies",
+    desc: "Built a platform where users can create and configure AI agents, assign knowledge bases, create and call tools, and design orchestrations to automate connected AI workflows.",
+    stack: ["Agentic AI", "Knowledge Bases", "Tool Calling", "Orchestration"]
+  },
+  {
+    tag: "AI · 02", icon: "📄",
     title: "BRD-Agent — Oracle Forms Reverse Engineering",
     client: "AI-Powered Oracle Forms BRD & Traceability Platform",
     desc: "AI agent that converts Oracle Forms XML metadata into structured Business Requirements Documents using Amazon Bedrock LLMs — parsing forms, blocks, triggers, LOVs and program units into standardised 15-section BRDs, with automated traceability reports, credit-based usage, and license expiry management.",
     stack: ["FastAPI", "Amazon Bedrock", "AWS S3", "Oracle Forms XML"]
   },
   {
-    tag: "AI · 02", icon: "🧠",
+    tag: "AI · 03", icon: "🧠",
     title: "LLM-Based Python Transformation Generator",
     client: "OptiSol",
     desc: "Transformation engine that generates executable Polars scripts from plain-English instructions — users upload CSV/Excel, describe the transformation, and receive verified, ready-to-run Python scripts with a Streamlit UI and time estimation.",
     stack: ["LLM", "Polars", "Streamlit"]
   },
   {
-    tag: "AI · 03", icon: "📈",
+    tag: "AI · 04", icon: "📈",
     title: "Quality Metrics Dashboard",
     client: "OptiSol",
     desc: "Interactive Streamlit dashboard connected to SQL and CSV sources, computing completeness, consistency, accuracy, validity and timeliness scores alongside column-wise quality analysis and regex-based pattern validation.",
     stack: ["Streamlit", "SQL", "Data Quality"]
   },
   {
-    tag: "AI · 04", icon: "📚",
+    tag: "AI · 05", icon: "📚",
     title: "Streamlit-Based Data Catalog",
     client: "OptiSol",
     desc: "Centralised metadata management tool with business glossary, cross-dataset metadata search, and regex-based sensitive data detection — later converted into RESTful APIs for backend integration.",
     stack: ["Streamlit", "REST APIs", "Data Governance"]
   },
   {
-    tag: "AI · 05", icon: "🩺",
+    tag: "AI · 06", icon: "🩺",
     title: "Smart Diagnosis of Rotating Machinery",
     client: "IEEE Publication",
     desc: "AI-based predictive maintenance system using vibration analysis and ISO 10816 standards, with tuned XGBoost and ensemble models detecting imbalance, misalignment and bearing defects, plus a real-time health monitoring dashboard.",
     stack: ["XGBoost", "Feature Engineering", "IEEE Published"]
   },
   {
-    tag: "AI · 06", icon: "🩹",
+    tag: "AI · 07", icon: "🩹",
     title: "NeuroGuard — Wearable Seizure Detection",
     client: "NEXATHON 2025 · Runner-Up",
     desc: "Python backend with AutoGluon-powered model training, LightGBM inference, and Arduino-based wearable sensors for seizure detection — winner at TNWISE 2025.",
     stack: ["Python", "AutoGluon", "Arduino"]
   },
   {
-    tag: "AI · 07", icon: "🗂️",
+    tag: "AI · 08", icon: "🗂️",
     title: "Data Catalogue Application",
     client: "OptiSol",
     desc: "Metadata exploration platform for SQL Server, PostgreSQL and MySQL with real-time schema discovery, table documentation, sample data preview, and metadata-driven search for analysts and governance teams.",
